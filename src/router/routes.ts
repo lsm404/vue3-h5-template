@@ -1,3 +1,8 @@
+/*
+ * @Autor: Lee
+ * @Date: 2023-12-12 21:07:13
+ * @LastEditTime: 2024-01-19 17:31:10
+ */
 import Layout from "@/layout/index.vue";
 import type { RouteRecordRaw } from "vue-router";
 import Demo from "@/views/demo/index.vue";
@@ -7,11 +12,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "root",
     component: Layout,
-    redirect: { name: "Demo" },
+    redirect: { name: "Home" },
     children: [
       {
-        path: "demo",
-        name: "Demo",
+        path: "home",
+        name: "Home",
         component: Demo,
         meta: {
           title: "主页"

@@ -1,3 +1,8 @@
+/*
+ * @Autor: Lee
+ * @Date: 2023-12-12 21:07:13
+ * @LastEditTime: 2024-01-19 15:03:51
+ */
 import { fileURLToPath, URL } from "node:url";
 import { defineConfig, loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
@@ -19,8 +24,10 @@ const root: string = process.cwd();
 export default defineConfig(({ mode }) => {
   // 环境变量
   const env = loadEnv(mode, root, "");
+  console.log({ env })
   return {
-    base: env.VITE_PUBLIC_PATH || "/",
+    // base: env.VITE_PUBLIC_PATH || "./",
+    base: env.VITE_PUBLIC_PATH || "./",
     plugins: [
       vue(),
       vueJsx(),

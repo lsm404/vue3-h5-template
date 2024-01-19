@@ -1,3 +1,8 @@
+<!--
+ * @Autor: Lee
+ * @Date: 2023-12-12 21:07:13
+ * @LastEditTime: 2024-01-19 18:13:17
+-->
 <template>
   <van-tabbar v-model="active" :placeholder="true" :route="true" fixed>
     <van-tabbar-item
@@ -20,7 +25,7 @@ const tabbarData = reactive([
     icon: "wap-home-o",
     title: "主页",
     to: {
-      name: "Demo"
+      name: "Home"
     }
   },
   {

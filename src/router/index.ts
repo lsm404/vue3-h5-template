@@ -1,3 +1,8 @@
+/*
+ * @Autor: Lee
+ * @Date: 2023-12-12 21:07:13
+ * @LastEditTime: 2024-01-19 18:17:55
+ */
 import {
   createRouter,
   createWebHashHistory,
@@ -25,7 +30,7 @@ router.beforeEach((to: toRouteType, from, next) => {
   // 路由缓存
   useCachedViewStoreHook().addCachedView(to);
   // 页面 title
-  setPageTitle(to.meta.title);
+  // setPageTitle(to.meta.title);
   next();
 });
 

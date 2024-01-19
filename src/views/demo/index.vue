@@ -1,4 +1,9 @@
-<script setup lang="ts" name="Demo">
+<!--
+ * @Autor: Lee
+ * @Date: 2023-12-12 21:07:13
+ * @LastEditTime: 2024-01-19 18:21:16
+-->
+<script setup lang="ts" name="Home">
 import { reactive } from "vue";
 
 const contentList = reactive([
@@ -30,15 +35,16 @@ const contentList = reactive([
     <div class="pl-[12px] border-l-[3px] border-[color:#41b883]">
       <a
         class="flex items-center"
-        href="https://github.com/yulimchen/vue3-h5-template"
+        href="http://www.wcysgxn.love"
         target="_blank"
       >
-        <svg-icon class="text-[20px] mr-[8px]" name="github" />
-        <h3 class="font-bold text-[18px] my-[4px]">Vue3-h5-template</h3>
+        <img class="logo mx-1" src="@/icons/chatgpt_logo.jpeg" alt="">
+        <h3 class="font-bold text-[18px] my-[4px]">ChatGPT</h3>
         <svg-icon class="text-[12px] ml-[5px]" name="link" />
       </a>
     </div>
-    <div
+    <div class="px-[12px] flex justify-center mt-10">待挖掘......</div>
+    <!-- <div
       class="text-[14px] py-[2px] px-[10px] rounded-[4px] bg-[var(--color-block-background)] mt-[14px]"
     >
       <p class="my-[14px] leading-[24px]">
@@ -49,6 +55,15 @@ const contentList = reactive([
 
     <div class="demo-main">
       <van-cell v-for="(item, idx) in contentList" :key="idx" :title="item" />
-    </div>
+    </div> -->
   </div>
 </template>
+
+<style lang="less" scoped>
+.demo-content {
+ .logo {
+  width: 20px;
+  height: 16px;
+ }
+}
+</style>
