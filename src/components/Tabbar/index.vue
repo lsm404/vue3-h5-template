@@ -1,7 +1,7 @@
 <!--
  * @Autor: Lee
  * @Date: 2023-12-12 21:07:13
- * @LastEditTime: 2024-01-19 18:13:17
+ * @LastEditTime: 2024-01-22 11:35:48
 -->
 <template>
   <van-tabbar v-model="active" :placeholder="true" :route="true" fixed>
@@ -37,7 +37,7 @@ const tabbarData = reactive([
   },
   {
     icon: "user-o",
-    title: "关于",
+    title: "应用",
     to: {
       name: "About"
     }

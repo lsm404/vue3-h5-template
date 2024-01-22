@@ -1,7 +1,7 @@
 <!--
  * @Autor: Lee
  * @Date: 2023-12-12 21:07:13
- * @LastEditTime: 2024-01-19 18:21:16
+ * @LastEditTime: 2024-01-22 15:33:43
 -->
 <script setup lang="ts" name="Home">
 import { reactive } from "vue";
@@ -27,18 +27,18 @@ const contentList = reactive([
 
 <template>
   <div class="demo-content px-[12px]">
-    <img
+    <!-- <img
       class="block w-[120px] mx-auto mb-[20px] pt-[30px]"
       alt="Vue logo"
       src="~@/assets/logo_melomini.png"
-    />
+    /> -->
     <div class="pl-[12px] border-l-[3px] border-[color:#41b883]">
       <a
         class="flex items-center"
         href="http://www.wcysgxn.love"
         target="_blank"
       >
-        <img class="logo mx-1" src="@/icons/chatgpt_logo.jpeg" alt="">
+        <svg-icon class="text-[12px] ml-[5px]" name="chatGPT" />
         <h3 class="font-bold text-[18px] my-[4px]">ChatGPT</h3>
         <svg-icon class="text-[12px] ml-[5px]" name="link" />
       </a>
@@ -61,9 +61,10 @@ const contentList = reactive([
 
 <style lang="less" scoped>
 .demo-content {
- .logo {
-  width: 20px;
-  height: 16px;
- }
+  // background: url("@/assets/home/home_bg.webp") no-repeat center center / 100% 100%;
+  .logo {
+    width: 20px;
+    height: 16px;
+  }
 }
 </style>

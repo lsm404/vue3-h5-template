@@ -1,3 +1,8 @@
+<!--
+ * @Autor: Lee
+ * @Date: 2023-12-12 21:07:13
+ * @LastEditTime: 2024-01-22 14:19:25
+-->
 <script setup lang="ts">
 import tabbar from "@/components/Tabbar/index.vue";
 import NavBar from "@/components/NavBar/index.vue";
@@ -8,6 +13,7 @@ import { computed } from "vue";
 const cachedViews = computed(() => {
   return useCachedViewStoreHook().cachedViewList;
 });
+console.log({ cachedViews });
 </script>
 
 <template>
