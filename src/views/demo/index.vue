@@ -1,7 +1,7 @@
 <!--
  * @Autor: Lee
  * @Date: 2023-12-12 21:07:13
- * @LastEditTime: 2024-01-22 15:33:43
+ * @LastEditTime: 2024-01-24 16:03:21
 -->
 <script setup lang="ts" name="Home">
 import { reactive } from "vue";
@@ -32,7 +32,7 @@ const contentList = reactive([
       alt="Vue logo"
       src="~@/assets/logo_melomini.png"
     /> -->
-    <div class="pl-[12px] border-l-[3px] border-[color:#41b883]">
+    <!-- <div class="pl-[12px] border-l-[3px] border-[color:#41b883]">
       <a
         class="flex items-center"
         href="http://www.wcysgxn.love"
@@ -43,8 +43,8 @@ const contentList = reactive([
         <svg-icon class="text-[12px] ml-[5px]" name="link" />
       </a>
     </div>
-    <div class="px-[12px] flex justify-center mt-10">待挖掘......</div>
-    <!-- <div
+    <div class="px-[12px] flex justify-center mt-10">待挖掘......</div> -->
+    <div
       class="text-[14px] py-[2px] px-[10px] rounded-[4px] bg-[var(--color-block-background)] mt-[14px]"
     >
       <p class="my-[14px] leading-[24px]">
@@ -55,7 +55,7 @@ const contentList = reactive([
 
     <div class="demo-main">
       <van-cell v-for="(item, idx) in contentList" :key="idx" :title="item" />
-    </div> -->
+    </div>
   </div>
 </template>
 
